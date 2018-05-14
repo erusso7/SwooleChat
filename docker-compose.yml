@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  swoole:
+    build: .
+    volumes:
+      - ./:/var/www
+    ports:
+      - 9501:9501
+    command: bin/console websocket:start
+
+  redis:
+    image: redis:alpine

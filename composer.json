@@ -1,0 +1,16 @@
+{
+    "name": "erusso/swool-chat",
+    "require": {
+        "symfony/console": "^4.0",
+        "symfony/var-dumper": "^4.0"
+    },
+    "authors": [
+        {
+            "name": "Ezequiel Russo",
+            "email": "ezequiel.russo@kupeka.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "SwooleChat\\": "src" }
+    }
+}

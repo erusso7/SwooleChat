@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+set_time_limit(0);
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$app = new Application('PHP Cli command example', '@package_version@');
+$server = \SwooleChat\Server\DefaultHandler::init();
+
+$app->addCommands([
+    new \SwooleChat\Commands\StartServer($server),
+]);
+$app->run();
