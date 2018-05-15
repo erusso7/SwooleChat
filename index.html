@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>larasocket demo</title>
+    <title>SwooleChat 0.1a</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <style>
@@ -38,7 +38,7 @@
     </div>
 
     <script>
-        var wsServer = "ws://localhost:9501"; //TODO: Parametrize from configs.
+        var wsServer = "ws://MainALB-1752053006.eu-west-1.elb.amazonaws.com:9501"; //TODO: Parametrize from configs.
         ws = new WebSocket(wsServer);
 
         ws.onopen = function (evt) {
